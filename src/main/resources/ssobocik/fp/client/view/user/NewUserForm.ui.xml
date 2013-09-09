@@ -1,0 +1,37 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:b="urn:import:com.github.gwtbootstrap.client.ui" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <ui:with field="messages" type="ssobocik.fp.client.Messages"/>
+    <b:Container>
+        <b:Heading size="2" text="{messages.lbNewUser}"/>
+        <b:WellForm title="{messages.lbNewUser}">
+            <b:ControlGroup ui:field="controlGroupUsername">
+                <b:ControlLabel for="username" >Username</b:ControlLabel>
+                <b:Controls>
+                    <b:TextBox b:id="username" ui:field="username" placeholder="Username"/>
+                    <b:HelpInline ui:field="helpUsername"/>
+                </b:Controls>
+            </b:ControlGroup>
+            <b:ControlGroup ui:field="controlGroupPassword">
+                <b:ControlLabel for="password" >Password</b:ControlLabel>
+                <b:Controls>
+                    <b:PasswordTextBox b:id="password" ui:field="password" placeholder="Password"/>
+                    <b:HelpInline ui:field="helpPassword"/>
+                </b:Controls>
+            </b:ControlGroup>
+            <b:ControlGroup ui:field="controlGroupPasswordRepeat">
+                <b:ControlLabel for="password">Repeat password</b:ControlLabel>
+                <b:Controls>
+                    <b:PasswordTextBox b:id="passwordRepeat" ui:field="passwordRepeat" placeholder="Repeat password"/>
+                    <b:HelpInline ui:field="helpPasswordRepeat"/>
+                </b:Controls>
+            </b:ControlGroup>
+            <b:Button ui:field="create" addStyleNames="btn" text="{messages.lbCreate}"/>
+        </b:WellForm>
+        <b:AlertBlock ui:field="alert" type="SUCCESS" close="false" heading="{messages.lbUserCreated}" animation="true"
+                      visible="false">
+            <g:Label text="{messages.lbYouCanSignInAsNewUser}"/>
+            <g:Button text="{messages.lbSignIn}" ui:field="signIn" addStyleNames="btn"/>
+        </b:AlertBlock>
+    </b:Container>
+</ui:UiBinder>

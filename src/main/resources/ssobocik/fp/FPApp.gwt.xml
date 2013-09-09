@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='FPApp'>
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name='com.google.gwt.junit.JUnit'/>
+    <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+    <inherits name="com.google.gwt.resources.Resources"/>
+    <inherits name="org.atmosphere.gwt.Client"/>
+    <inherits name="com.google.gwt.logging.Logging"/>
+    <set-property name="gwt.logging.logLevel" value="FINEST"/>
+    <set-property name="gwt.logging.popupHandler" value="DISABLED"/>
+    <inherits name='com.github.gwtbootstrap.Bootstrap' />
+
+    <entry-point class='ssobocik.fp.client.FPAppEntryPoint'/>
+
+    <extend-property name="locale" values="pl"/>
+    <set-property name="locale" value="pl"/>
+    <set-property-fallback name="locale" value="pl"/>
+
+    <source path='client'/>
+    <source path='dto'/>
+    <source path='exceptions'/>
+</module>

@@ -1,0 +1,36 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+
+# gwt caches and compiled units #
+war/gwt_bree/
+gwt-unitCache/
+
+# boilerplate generated classes #
+.apt_generated/
+
+# more caches and things from deploy #
+war/WEB-INF/deploy/
+war/WEB-INF/classes/
+
+target/
+.idea/
+.settings/
+
+# intelliJ idea
+*.iml
+*.ipr
+*.iws
+
+*.classpath
+*.project
+
+*.launch
+
+#plik konfiguracyjny pluginu do Jiry
+atlassian-ide-plugin.xml
+
+#in this project persistence is managed by spring, this file is only for Intellij to provide code completion
+persistence.xml

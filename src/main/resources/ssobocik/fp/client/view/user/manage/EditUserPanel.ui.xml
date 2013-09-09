@@ -1,0 +1,50 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:b="urn:import:com.github.gwtbootstrap.client.ui" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <ui:with field="messages" type="ssobocik.fp.client.Messages"/>
+    <g:HTMLPanel>
+        <b:Heading size="2" text="{messages.lbEditUser}"/>
+        <b:WellForm title="{messages.lbEditUser}" ui:field="userForm" type="HORIZONTAL">
+            <b:Fieldset>
+                <b:Legend>Edit user</b:Legend>
+                <b:ControlGroup ui:field="usernameControlGroup">
+                    <b:ControlLabel for="username">Username</b:ControlLabel>
+                    <b:Controls>
+                        <b:TextBox b:id="username" ui:field="username" placeholder="{messages.lbUsername}"/>
+                        <b:HelpInline ui:field="usernameHelpInline"/>
+                    </b:Controls>
+                </b:ControlGroup>
+                <b:ControlGroup ui:field="nicknameControlGroup">
+                    <b:ControlLabel for="nickname">Nickname</b:ControlLabel>
+                    <b:Controls>
+                        <b:TextBox b:id="nickname" ui:field="nickname" placeholder="{messages.lbNickname}"/>
+                        <b:HelpInline ui:field="nicknameHelpInline"/>
+                    </b:Controls>
+                </b:ControlGroup>
+                <b:ControlGroup ui:field="passwordControlGroup">
+                    <b:ControlLabel for="password">Password</b:ControlLabel>
+                    <b:Controls>
+                        <b:PasswordTextBox b:id="password" ui:field="password" placeholder="{messages.lbPassword}"/>
+                        <b:HelpInline ui:field="passwordHelpInline"/>
+                    </b:Controls>
+                </b:ControlGroup>
+                <b:ControlGroup>
+                    <b:ControlLabel for="admin">Is admin?</b:ControlLabel>
+                    <b:Controls>
+                        <b:CheckBox b:id="admin" ui:field="admin"/>
+                        <b:HelpInline ui:field="adminHelpInline"/>
+                    </b:Controls>
+                </b:ControlGroup>
+                <b:FormActions>
+                    <b:Button ui:field="saveButton" type="PRIMARY" text="{messages.lbSaveChanges}"/>
+                    <b:Button ui:field="newUserButton" type="SUCCESS" text="{messages.lbNewUser}"/>
+                    <b:Button ui:field="removeButton" type="DANGER" text="{messages.lbRemoveUser}"/>
+                    <b:Button ui:field="cancelButton" text="{messages.lbCancel}"/>
+                </b:FormActions>
+            </b:Fieldset>
+        </b:WellForm>
+        <b:AlertBlock ui:field="alert" type="SUCCESS" close="false" animation="true" visible="false">
+
+        </b:AlertBlock>
+    </g:HTMLPanel>
+</ui:UiBinder>

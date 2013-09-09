@@ -1,0 +1,18 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:b="urn:import:com.github.gwtbootstrap.client.ui"
+             xmlns:manage="urn:import:ssobocik.fp.client.view.user.manage">
+    <ui:with field="messages" type="ssobocik.fp.client.Messages"/>
+    <b:Container>
+        <b:Row>
+            <b:Column size="5">
+                <manage:UsersDataGrid ui:field="usersDataGrid"
+                                      bordered="true" condensed="true" striped="true"
+                                      height="300px" width="100%"/>
+            </b:Column>
+            <b:Column size="7">
+                <manage:EditUserPanel ui:field="editUserPanel"/>
+            </b:Column>
+        </b:Row>
+    </b:Container>
+</ui:UiBinder>

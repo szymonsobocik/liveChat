@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+    <ui:with field="messages" type="ssobocik.fp.client.Messages"/>
+    <g:HTMLPanel width="100%">
+        <b:Heading size="2">Users</b:Heading>
+        <g:ScrollPanel addStyleNames="AllUsersPanelScroller">
+            <g:HTMLPanel ui:field="usersContainer" addStyleNames="AllUsersPanelUserContainer"/>
+        </g:ScrollPanel>
+    </g:HTMLPanel>
+</ui:UiBinder>

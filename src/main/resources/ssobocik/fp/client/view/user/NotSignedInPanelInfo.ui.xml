@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g="urn:import:com.google.gwt.user.client.ui"
+
+             xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+    <ui:with field="messages" type="ssobocik.fp.client.Messages"/>
+    <b:Container>
+        <b:Heading size="2" text="{messages.lbYouAreNotSignedIn}"/>
+        <b:Paragraph text="{messages.lbSignInDescription}"/>
+        <b:Button text="{messages.lbSignIn}" ui:field="signIn"/>
+    </b:Container>
+
+</ui:UiBinder>

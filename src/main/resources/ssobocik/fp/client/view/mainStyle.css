@@ -1,0 +1,72 @@
+.AllUsersPanelScroller {
+    height: 380px;
+    background: #EEEEEE;
+}
+
+.AllUsersPanelUserContainer {
+    width: 100%;
+}
+
+.UserPanel {
+    width: 100%;
+    border: 1px solid #B6B6B6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 1px;
+    background: #E1E1E1;
+    line-height: 1;
+    padding: 1px 1px 1px 1px;
+    outline: none;
+}
+
+.UserPanel:hover {
+    border: 2px solid #888888;
+    background: #CACACA;
+}
+
+.UserPanelTitle{
+    font-weight: bold;
+    font-size: 16px;
+    padding-bottom: 4px;
+}
+
+.UserPanelStatus{
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+.UserPanelDescription{
+    padding-bottom: 4px;
+}
+
+.backRed {
+    background: red;
+}
+
+.backRosyBrown {
+    background: #bc8f8f;
+    border: 5px solid #7e7d7a;
+}
+
+.backLightGrey {
+    background: #EEEEEE;
+}
+
+.backLightBlue {
+    background: #add8e6;
+}
+
+.defaultChatHeight {
+    height: 300px;
+}
+
+.defaultSpacing {
+    padding-bottom: 10px;
+}
+
+.ChangeDescriptionPanel{
+
+}
+

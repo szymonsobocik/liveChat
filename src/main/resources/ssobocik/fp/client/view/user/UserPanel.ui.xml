@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder' xmlns:g="urn:import:com.google.gwt.user.client.ui"
+             xmlns:b="urn:import:com.github.gwtbootstrap.client.ui">
+    <ui:with field="messages" type="ssobocik.fp.client.Messages"/>
+    <g:VerticalPanel addStyleNames="UserPanel">
+        <g:Label ui:field="name" addStyleNames="UserPanelTitle"/>
+        <g:Label ui:field="status" addStyleNames="UserPanelStatus"/>
+        <g:Label ui:field="description" addStyleNames="UserPanelDescription"/>
+        <b:Button ui:field="beginChat" text="{messages.lbBeginChat}"/>
+    </g:VerticalPanel>
+
+</ui:UiBinder>
